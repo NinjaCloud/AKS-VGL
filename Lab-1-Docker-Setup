@@ -1,4 +1,3 @@
-```markdown
 # Lab: Creating a Virtual Machine on Azure Cloud with Ubuntu 22.04 OS and Standard B2s Machine Type
 
 This lab provides a step-by-step guide to create an Azure virtual machine (VM) with Ubuntu 22.04 OS using the Standard B2s machine type. Additionally, it includes creating a new resource group named `docker`.
@@ -103,11 +102,3 @@ This lab provides a step-by-step guide to create an Azure virtual machine (VM) w
 4. Open an SSH client (e.g., PuTTY, terminal) and connect to the VM:
    ```bash
    ssh azureuser@<Public-IP-Address>
-   ```
-5. Enter the password you set during VM creation.
-
----
-
-## Conclusion
-You have successfully created a virtual machine on Azure with Ubuntu 22.04 OS and Standard B2s machine type in a resource group named `docker`. You can now configure your VM for further use, such as installing Docker, deploying applications, or testing workloads.
-```

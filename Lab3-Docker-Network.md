@@ -1,4 +1,4 @@
-# Lab 6: Docker Networking
+# Lab : Docker Networking
 
 This lab demonstrates how to work with Docker networking by creating bridges, testing container connectivity, and experimenting with various network types such as `host` and `none`.
 

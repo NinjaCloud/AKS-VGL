@@ -1,29 +1,4 @@
-```markdown
-# Lab: Installing Docker on an Azure Virtual Machine (Ubuntu 22.04)
-
-This lab provides a step-by-step guide to install Docker on an Azure Virtual Machine running Ubuntu 22.04 and enables Docker commands to be run without root access.
-
----
-
-## Prerequisites
-1. An Azure Virtual Machine (VM) with Ubuntu 22.04 OS created (Refer to the previous lab).
-2. SSH access to the VM with the username and password configured during creation.
-
----
-
-## Step 1: Connect to the Virtual Machine
-1. Open a terminal or SSH client (e.g., PuTTY).
-2. Connect to the VM using the following command:
-   ```bash
-   ssh azureuser@<Public-IP-Address>
-   ```
-   Replace `<Public-IP-Address>` with the public IP address of your VM.
-
-3. Enter the password for the `azureuser` account when prompted.
-
----
-
-## Step 2: Switch to Root User
+## Step 1: Switch to Root User
 To ensure you have the necessary privileges to install Docker, switch to the root user:
 ```bash
 sudo su
@@ -31,7 +6,7 @@ sudo su
 
 ---
 
-## Step 3: Update the System
+## Step 2: Update the System
 Run the following command to update the package lists:
 ```bash
 apt update -y
@@ -39,7 +14,7 @@ apt update -y
 
 ---
 
-## Step 4: Install Required Tools
+## Step 3: Install Required Tools
 Install the `curl` utility, which is required to download the Docker installation script:
 ```bash
 apt install curl -y
@@ -47,7 +22,7 @@ apt install curl -y
 
 ---
 
-## Step 5: Install Docker
+## Step 4: Install Docker
 Run the Docker installation script:
 ```bash
 curl -SSL https://get.docker.com/ | sh
@@ -55,7 +30,7 @@ curl -SSL https://get.docker.com/ | sh
 
 ---
 
-## Step 6: Verify Docker Installation
+## Step 5: Verify Docker Installation
 1. Check if the Docker service is running:
    ```bash
    service docker status
@@ -69,7 +44,7 @@ curl -SSL https://get.docker.com/ | sh
 
 ---
 
-## Step 7: Allow Non-Root Users to Run Docker Commands
+## Step 6: Allow Non-Root Users to Run Docker Commands
 By default, Docker requires root privileges to execute commands. To enable a non-root user (e.g., `azureuser`) to run Docker commands, perform the following steps:
 
 1. Add the user to the `docker` group:

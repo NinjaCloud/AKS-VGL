@@ -67,6 +67,3 @@ By default, Docker requires root privileges to execute commands. To enable a non
 
 ---
 
-## Conclusion
-You have successfully installed Docker on your Azure VM running Ubuntu 22.04 and enabled non-root users to run Docker commands. Your VM is now ready for containerized application deployment and development.
-```

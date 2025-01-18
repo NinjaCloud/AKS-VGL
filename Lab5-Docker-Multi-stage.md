@@ -50,13 +50,13 @@ Create a Docker image for a Java application using a multi-stage build to separa
 2. Add the following content to the Dockerfile:
    ```dockerfile
    # Stage 1: Build
-   FROM openjdk:17-jdk-slim AS builder
+   FROM openjdk:17-slim AS builder
    WORKDIR /app
    COPY Main.java .
    RUN javac Main.java
 
    # Stage 2: Runtime
-   FROM openjdk:17-jre-slim
+   FROM openjdk:17-slim
    WORKDIR /app
    COPY --from=builder /app/Main.class .
    CMD ["java", "Main"]

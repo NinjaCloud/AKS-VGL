@@ -98,22 +98,6 @@ kubectl describe svc httpd-svc
 kubectl get ep
 ```
 
-#### Test Connectivity:
-1. Obtain the External IPs of the cluster nodes:
-   ```bash
-   kubectl get nodes -o wide | awk '{print $7}'
-   ```
-2. SSH into one of the nodes:
-   ```bash
-   ssh -t azureuser@<Node_IP>
-   ```
-3. Test the service using `curl`:
-   ```bash
-   curl <Cluster_IP>:<Service_Port>
-   ```
-
----
-
 ### Task 3: Modify Service to NodePort
 
 #### Update the Service YAML:

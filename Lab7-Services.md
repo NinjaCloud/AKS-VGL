@@ -22,7 +22,7 @@ This lab will guide you through creating a Kubernetes pod, configuring various s
 
 ---
 
-### Task 3: Create a Pod
+### Task 1: Create a Pod
 
 #### Create the YAML for the Pod:
 ```bash
@@ -61,7 +61,7 @@ kubectl describe pod httpd-pod
 
 ---
 
-### Task 4: Setup ClusterIP Service
+### Task 2: Setup ClusterIP Service
 
 #### Create the YAML for the ClusterIP Service:
 ```bash
@@ -114,7 +114,7 @@ kubectl get ep
 
 ---
 
-### Task 5: Modify Service to NodePort
+### Task 3: Modify Service to NodePort
 
 #### Update the Service YAML:
 ```bash
@@ -144,7 +144,7 @@ kubectl describe svc httpd-svc
 
 ---
 
-### Task 6: Modify Service to LoadBalancer
+### Task 4: Modify Service to LoadBalancer
 
 #### Update the Service YAML:
 ```bash
@@ -175,7 +175,7 @@ kubectl describe svc httpd-svc
 
 ---
 
-### Task 7: Delete and Recreate Pod
+### Task 5: Delete and Recreate Pod
 
 #### Delete the Existing Pod:
 ```bash
@@ -195,7 +195,7 @@ kubectl describe svc httpd-svc
 
 ---
 
-### Task 8: Cleanup Resources
+### Task 6: Cleanup Resources
 
 #### Delete the Resources:
 ```bash

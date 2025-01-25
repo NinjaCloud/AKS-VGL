@@ -124,8 +124,8 @@ metadata:
   name: test
   namespace: default
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /  
-    kubernetes.io/ingress.class: addon-http-application-routing
+    appgw.ingress.kubernetes.io/backend-path-prefix: /  
+    kubernetes.io/ingress.class: azure/application-gateway
 spec:
   rules:
     - http:

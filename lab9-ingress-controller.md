@@ -8,18 +8,6 @@
 
 ---
 
-## **Step 1: Create Namespace (Optional)**
-
-Create a separate namespace for the deployment.  
-```bash
-kubectl create namespace ingress-lab
-```
-
-Set the context to the namespace:  
-```bash
-kubectl config set-context --current --namespace=ingress-lab
-```
-
 ---
 
 ## **Step 2: Deploy Two Pods**

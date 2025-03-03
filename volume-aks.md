@@ -1,3 +1,6 @@
+vi nginx.yaml
+
+```
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
@@ -28,7 +31,11 @@ spec:
       name: www
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: "standard"
+      storageClassName: "default"
       resources:
         requests:
           storage: 1Gi
+```
+```
+kubectl apply -f nginx.yaml
+```
